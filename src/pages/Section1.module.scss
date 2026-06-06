@@ -1,6 +1,6 @@
 .section {
   position: relative;
-  height: 1880px;
+  height: 8880px;
   width: 100%;
   z-index: 1;
   padding-bottom: 10rem;
@@ -15,37 +15,184 @@
     width: 48%;
   }
   .header {
-    text-align: center;
-    h2 {
-      font-size: 3em;
-      font-family: serif;
-      line-height: 1.5;
-      font-weight: 600;
+    text-align: left;
+    padding: 1.4em;
+    padding-top: 0;
+    margin-bottom: 4em;
+    .logo {
+      width: 14em;
+      margin-bottom: 4em;
     }
-    img {
-      margin-bottom: -8em;
+    h1 {
+      font-size: 8em;
+      font-family: serif;
+      margin-bottom: 0.5em;
+      font-weight: 600;
+      color: #41b1ad;
+    }
+    strong {
+      color: #047c78;
+    }
+    h2 {
+      font-size: 4.4em;
+      font-family: serif;
+      line-height: 1.4;
+      font-weight: 600;
+      color: #41b1ad;
+    }
+    .intro {
+      text-align: center;
+      img {
+        width: 90%;
+        margin: 1.2em 0;
+      }
+      p {
+        font-size: 2.4em;
+        line-height: 1.5;
+      }
     }
   }
   .content {
     text-align: center;
+    .parts {
+      .box {
+        .title {
+          h1 {
+            font-size: 4.2em;
+            position: relative;
+            margin-bottom: 1em;
+          }
+          .title-bg {
+            position: absolute;
+            width: 7em;
+            left: calc(50% - 7em / 2);
+            z-index: -1;
+            top: -50%;
+            &.title-bg2 {
+              width: 90%;
+              left: calc(50% - 90% / 2);
+            }
+          }
+        }
+      }
+      .instagram-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 2em;
+        width: 100%;
+        .instagram-card {
+          width: 28em;
+          height: 40em;
+          border-radius: 2em;
+          border: 1px solid #ccc;
+          overflow: hidden;
+          margin-bottom: 4em;
+          background-color: #fff;
+          .cover {
+            margin-bottom: 1em;
+            position: relative;
+            .icon {
+              position: absolute;
+              width: 4em;
+              top: 0.5em;
+              left: 0.5em;
+              z-index: 2;
+            }
+            .main-pic {
+              width: 100%;
+              height: 28em;
+              object-fit: cover;
+            }
+          }
+          .desc {
+            font-size: 2em;
+            padding: 0.5em;
+            text-align: left;
+            h4 {
+              font-weight: 600;
+              margin-bottom: 0.5em;
+            }
+            p {
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              line-height: 1.4;
+            }
+          }
+        }
+      }
+      .product-intro {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        left: 0;
+        border: 2px solid #d5be83;
+        text-align: center;
+        margin-bottom: 4em;
+        img {
+          left: 0;
+        }
+        .desc {
+          text-align: center;
+          img {
+            left: 0;
+          }
+          .main-title {
+            margin-top: 0.2em;
+            font-size: 6.8em;
+            font-style: italic;
+            font-family: serif;
+            font-weight: 600;
+            background: #41b1ad;
+            color: #fff;
+            width: 3.6em;
+            border-radius: 0.2em;
+            transform: translateX(-50%);
+            margin-left: 50%;
+            margin-bottom: 0.5em;
+          }
+          .sub-title {
+            margin-top: 0.2em;
+            font-size: 4.6em;
+            font-family: serif;
+            font-weight: 800;
+            color: #41b1ad;
+            margin-bottom: 0.5em;
+          }
+          p {
+            font-size: 2.4em;
+            line-height: 1.5;
+            margin-bottom: 1em;
+          }
+          .target-list {
+            text-align: left;
+            margin-top: 1em;
+            font-size: 3em;
+            margin: 1em;
+            color: #223163;
+            li {
+              background: #c4e7e6;
+              border-radius: 2em;
+              margin-bottom: 0.5em;
+              padding: 0.5em;
+              display: flex;
+              align-items: center;
+              img {
+                width: 1.6em;
+                margin-right: 0.5em;
+              }
+            }
+          }
+        }
+      }
+    }
     .grid-bottom {
       margin-top: -12em;
       z-index: 2;
       position: relative;
-    }
-  }
-  .footer {
-    text-align: center;
-    padding: 0 2em;
-    font-size: 1.4em;
-    line-height: 2;
-    img {
-      width: 60%;
-      margin-bottom: 2em;
-    }
-    .desc {
-      display: flex;
-      justify-content: space-between;
     }
   }
 }

@@ -1,51 +1,259 @@
-import bg from "../assets/newImgs/sec1/background.png";
-import pic1 from "../assets/newImgs/sec1/1.png";
-import pic2 from "../assets/newImgs/sec1/2.png";
-import pic7 from "../assets/newImgs/sec1/7.png";
-import pic3 from "../assets/newImgs/sec1/3.png";
-import pic4 from "../assets/newImgs/sec1/4.png";
-import pic5 from "../assets/newImgs/sec1/5.png";
+import bg1 from "../assets/imgs/sec1/bg_1.jpg";
+import bg2 from "../assets/imgs/sec1/bg_2.jpg";
+import bg3 from "../assets/imgs/sec1/bg_3.jpg";
+import logo from "../assets/imgs/sec1/logo.png";
+import titleBg1 from "../assets/imgs/sec1/title_bg_1.png";
+import titleBg2 from "../assets/imgs/sec1/title_bg_2.png";
+import cardIcon from "../assets/imgs/sec1/card_icon.png";
+import checkIcon from "../assets/imgs/sec1/check_icon.png";
+import product1 from "../assets/imgs/sec1/product1.png";
+import product2 from "../assets/imgs/sec1/product2.png";
+import product3 from "../assets/imgs/sec1/product3.png";
+import product4 from "../assets/imgs/sec1/product4.png";
+
 import styles from "./Section1.module.scss";
 import classnames from "classnames";
+
 export default function Sec1() {
   return (
     <div className={styles["section"]}>
-      <img src={bg} alt="" className={styles["bg"]} />
+      <img src={bg1} alt="" className={styles["bg"]} />
       <section className={styles["header"]}>
-        <img src={pic1} alt="" />
-        <h2>
-          專注於「當下」的濃密科學。
-          <br />
-          從此刻開始，感受極致精萃的修護一滴。
-        </h2>
+        <img className={styles["logo"]} src={logo} alt="" />
+        <h1>
+          日本旅行<strong>必買!!</strong>
+        </h1>
+        <h2>用DHC，好好照顧現在的自己， 也為未來的自己提前準備。</h2>
+        <div className={styles["intro"]}>
+          <img src={product1} alt="" />
+          <p style={{ marginBottom: "1em" }}>
+            最近開始注意到一些日常的小變化，
+            <br />
+            但又總覺得「應該還好吧」。
+          </p>
+
+          <p>
+            DHC陪著你留意那些容易被忽略的小訊號，
+            <br />
+            從日常保養開始，慢慢調整現在與未來的自己。
+          </p>
+        </div>
       </section>
       <section className={styles["content"]}>
-        <img src={pic2} style={{ marginBottom: "-10em" }} alt="" />
-        <section className={styles["grid"]}>
-          <img className={styles["grid-pic"]} src={pic5} alt="" />
-          <img
-            className={styles["grid-pic"]}
-            style={{ marginLeft: "-5em", transform: "translate(0px, 1.8em)" }}
-            src={pic4}
-            alt=""
-          />
-        </section>
-        <img
-          className={classnames(styles["grid-pic"], styles["grid-bottom"])}
-          src={pic3}
-          alt=""
-        />
-      </section>
-      <section className={styles["footer"]}>
-        <img src={pic7} style={{ marginTop: "-2em" }} alt="" />
-        <div className={styles["desc"]}>
-          <p>*1 整肌成分 胺基乙醯丙酸 (5-ALA)</p>
-          <p>*2 整肌成分 苯乙基間苯二酚 (W377)</p>
+        <div className={styles["parts"]}>
+          <div className={styles["box"]}>
+            <div className={styles["title"]}>
+              <h1>
+                投稿Image
+                <img className={styles["title-bg"]} src={titleBg1} alt="" />
+              </h1>
+            </div>
+            <div className={styles["instagram-list"]}>
+              <div className={styles["instagram-card"]}>
+                <div className={styles["cover"]}>
+                  <img src={cardIcon} alt="" className={styles["icon"]} />
+                  <img
+                    src="https://placehold.co/600x400"
+                    alt=""
+                    className={styles["main-pic"]}
+                  />
+                </div>
+                <div className={styles["desc"]}>
+                  <h4 className={styles["name"]}>@username</h4>
+                  <p>
+                    DHC陪著你留意那些容易被忽略的小訊號，從日常保養開始，慢慢調整現在與未來的自己。
+                  </p>
+                </div>
+              </div>
+              <div className={styles["instagram-card"]}>
+                <div className={styles["cover"]}>
+                  <img src={cardIcon} alt="" className={styles["icon"]} />
+                  <img
+                    src="https://placehold.co/600x400"
+                    alt=""
+                    className={styles["main-pic"]}
+                  />
+                </div>
+                <div className={styles["desc"]}>
+                  <h4 className={styles["name"]}>@username</h4>
+                  <p>
+                    DHC陪著你留意那些容易被忽略的小訊號，從日常保養開始，慢慢調整現在與未來的自己。
+                  </p>
+                </div>
+              </div>
+              <div className={styles["instagram-card"]}>
+                <div className={styles["cover"]}>
+                  <img src={cardIcon} alt="" className={styles["icon"]} />
+                  <img
+                    src="https://placehold.co/600x400"
+                    alt=""
+                    className={styles["main-pic"]}
+                  />
+                </div>
+                <div className={styles["desc"]}>
+                  <h4 className={styles["name"]}>@username</h4>
+                  <p>
+                    DHC陪著你留意那些容易被忽略的小訊號，從日常保養開始，慢慢調整現在與未來的自己。
+                  </p>
+                </div>
+              </div>
+              <div className={styles["instagram-card"]}>
+                <div className={styles["cover"]}>
+                  <img src={cardIcon} alt="" className={styles["icon"]} />
+                  <img
+                    src="https://placehold.co/600x400"
+                    alt=""
+                    className={styles["main-pic"]}
+                  />
+                </div>
+                <div className={styles["desc"]}>
+                  <h4 className={styles["name"]}>@username</h4>
+                  <p>
+                    DHC陪著你留意那些容易被忽略的小訊號，從日常保養開始，慢慢調整現在與未來的自己。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles["box"]}>
+            <div className={styles["title"]}>
+              <h1>
+                產品介紹
+                <img className={styles["title-bg"]} src={titleBg1} alt="" />
+              </h1>
+            </div>
+            <div className={styles["product-intro"]}>
+              <img src={bg2} alt="" className={styles["bg"]} />
+              <div className={styles["desc"]}>
+                <img
+                  src={product2}
+                  alt=""
+                  style={{ width: "50%", marginTop: "4em" }}
+                />
+                <h2 className={styles["main-title"]}>GABA</h2>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt=""
+                  style={{
+                    width: "80%",
+                    marginTop: "0.5em",
+                    marginBottom: "2em",
+                  }}
+                />
+                <p>
+                  明明有睡飽，
+                  <br />
+                  卻還是提不起精神，
+                  <br />
+                  那或許是身體在提醒你,
+                  <br />
+                  你還沒有真的好好休息。
+                </p>
+                <p>
+                  忙碌的生活裡，
+                  <br />
+                  我們常常長時間處在緊繃狀態。
+                  <br />
+                  DHC GABA著眼於現代人的「休息力」，
+                  <br />
+                  陪著你慢慢調整每天的生活節奏與狀態。
+                </p>
+                <p>DHC GABA 每日建議攝取量中含有</p>
+                <h2 className={styles["sub-title"]}>適合推薦給這類人群！</h2>
+                <ul className={styles["target-list"]}>
+                  <li>
+                    <img src={checkIcon} alt="" />
+                    在忙碌與壓力中努力生活的人
+                  </li>
+                  <li>
+                    <img src={checkIcon} alt="" />
+                    希望每天都能充滿活力地度過的人
+                  </li>
+                  <li>
+                    <img src={checkIcon} alt="" />
+                    長時間處於緊繃節奏的人
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className={styles["product-intro"]}>
+              <img src={bg3} alt="" className={styles["bg"]} />
+              <div className={styles["desc"]}>
+                <img
+                  src={product3}
+                  alt=""
+                  style={{ width: "50%", marginTop: "4em" }}
+                />
+                <h2
+                  className={styles["main-title"]}
+                  style={{
+                    width: "6.6em",
+                    fontSize: "5em",
+                    padding: "0.2em 0",
+                  }}
+                >
+                  持續型生物素
+                </h2>
+                <img
+                  src="https://placehold.co/600x400"
+                  alt=""
+                  style={{
+                    width: "80%",
+                    marginTop: "0.5em",
+                    marginBottom: "2em",
+                  }}
+                />
+                <p>
+                  總覺得「現在應該還好」，
+                  <br />
+                  或許正是現在開始保養的時候。
+                </p>
+                <p>
+                  日常狀態、美麗習慣與每天的生活節奏，
+                  <br />
+                  都是一點一滴慢慢累積而成。
+                  <br />
+                  持續型生物素,由內而外，
+                  <br />
+                  陪伴妳打造美麗的基礎狀態。
+                </p>
+                <p>
+                  生物素被稱為「美的維他命」，
+                  <br />
+                  與皮膚及黏膜的健康維持息息相關。
+                </p>
+                <p>
+                  DHC「持續型生物素」 <br />
+                  採用緩慢釋放的 Time Release 配方， <br />
+                  每日建議攝取量可補充生物素500μg※， <br />
+                  有效率地陪伴妳打造美麗基礎。
+                </p>
+                <p>※以上為每日建議攝取量</p>
+                <div className={styles["title"]} style={{ marginTop: "6em" }}>
+                  <h1
+                    style={{
+                      fontSize: "4em",
+                      fontFamily: "serif",
+                      color: "white",
+                    }}
+                  >
+                    超紅的DHC持續型系列產品
+                    <img
+                      className={classnames(
+                        styles["title-bg"],
+                        styles["title-bg2"],
+                      )}
+                      src={titleBg2}
+                      alt=""
+                    />
+                  </h1>
+                </div>
+                <img src={product4} style={{ width: "90%" }} alt="" />
+                <p>持續型維他命C，還有持續型維他命B群！</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <p style={{ textAlign: "left" }}>
-          *3 彈力成分 合成基因重組（Decapeptide-63／Synthetic Human Gene
-          Recombinant Polypeptide-148／Hexapeptide-40）
-        </p>
       </section>
     </div>
   );
