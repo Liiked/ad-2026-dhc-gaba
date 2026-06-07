@@ -6,6 +6,8 @@ import titleBg1 from "../assets/imgs/sec1/title_bg_1.png";
 import titleBg2 from "../assets/imgs/sec1/title_bg_2.png";
 import cardIcon from "../assets/imgs/sec1/card_icon.png";
 import checkIcon from "../assets/imgs/sec1/check_icon.png";
+import model1 from "../assets/imgs/sec1/model_1.png";
+import model2 from "../assets/imgs/sec1/model_2.png";
 import product1 from "../assets/imgs/sec1/product1.png";
 import product2 from "../assets/imgs/sec1/product2.png";
 import product3 from "../assets/imgs/sec1/product3.png";
@@ -122,7 +124,10 @@ export default function Sec1() {
                 <img className={styles["title-bg"]} src={titleBg1} alt="" />
               </h1>
             </div>
-            <div className={styles["product-intro"]}>
+            <div
+              className={styles["product-intro"]}
+              style={{ height: "172em" }}
+            >
               <img src={bg2} alt="" className={styles["bg"]} />
               <div className={styles["desc"]}>
                 <img
@@ -132,7 +137,7 @@ export default function Sec1() {
                 />
                 <h2 className={styles["main-title"]}>GABA</h2>
                 <img
-                  src="https://placehold.co/600x400"
+                  src={model1}
                   alt=""
                   style={{
                     width: "80%",
@@ -176,7 +181,10 @@ export default function Sec1() {
                 </ul>
               </div>
             </div>
-            <div className={styles["product-intro"]}>
+            <div
+              className={styles["product-intro"]}
+              style={{ height: "204em" }}
+            >
               <img src={bg3} alt="" className={styles["bg"]} />
               <div className={styles["desc"]}>
                 <img
@@ -195,12 +203,12 @@ export default function Sec1() {
                   持續型生物素
                 </h2>
                 <img
-                  src="https://placehold.co/600x400"
+                  src={model2}
                   alt=""
                   style={{
                     width: "80%",
                     marginTop: "0.5em",
-                    marginBottom: "2em",
+                    marginBottom: "4em",
                   }}
                 />
                 <p>
