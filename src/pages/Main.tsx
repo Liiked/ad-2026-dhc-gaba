@@ -6,7 +6,7 @@ import Section2 from "./Section2";
 
 export default function Main() {
   useEffect(() => {
-    document.title = "活动页";
+    document.title = "DHC";
   }, []);
   return (
     <div className={styles["app"]}>
