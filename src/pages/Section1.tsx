@@ -8,6 +8,10 @@ import cardIcon from "../assets/imgs/sec1/card_icon.png";
 import checkIcon from "../assets/imgs/sec1/check_icon.png";
 import model1 from "../assets/imgs/sec1/model_1.png";
 import model2 from "../assets/imgs/sec1/model_2.png";
+import pic1 from "../assets/imgs/sec1/pic_1.jpg";
+import pic2 from "../assets/imgs/sec1/pic_2.jpg";
+import pic3 from "../assets/imgs/sec1/pic_3.jpg";
+import pic4 from "../assets/imgs/sec1/pic_4.jpg";
 import product1 from "../assets/imgs/sec1/product1.png";
 import product2 from "../assets/imgs/sec1/product2.png";
 import product3 from "../assets/imgs/sec1/product3.png";
@@ -51,70 +55,58 @@ export default function Sec1() {
               </h1>
             </div>
             <div className={styles["instagram-list"]}>
-              <div className={styles["instagram-card"]}>
+              <a
+                href="https://www.instagram.com/reel/DaC4LxiSUcE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                className={styles["instagram-card"]}
+              >
                 <div className={styles["cover"]}>
                   <img src={cardIcon} alt="" className={styles["icon"]} />
-                  <img
-                    src="https://placehold.co/600x400"
-                    alt=""
-                    className={styles["main-pic"]}
-                  />
+                  <img src={pic2} alt="" className={styles["main-pic"]} />
                 </div>
                 <div className={styles["desc"]}>
-                  <h4 className={styles["name"]}>@username</h4>
-                  <p>
-                    DHC陪著你留意那些容易被忽略的小訊號，從日常保養開始，慢慢調整現在與未來的自己。
-                  </p>
+                  <h4 className={styles["name"]}>@dashxu</h4>
+                  <p>明明睡滿8小時，為什麼隔天還是超級沒精神？🫠</p>
                 </div>
-              </div>
-              <div className={styles["instagram-card"]}>
+              </a>
+              <a
+                href="https://www.instagram.com/reel/DaIS8Poyomf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                className={styles["instagram-card"]}
+              >
                 <div className={styles["cover"]}>
                   <img src={cardIcon} alt="" className={styles["icon"]} />
-                  <img
-                    src="https://placehold.co/600x400"
-                    alt=""
-                    className={styles["main-pic"]}
-                  />
+                  <img src={pic3} alt="" className={styles["main-pic"]} />
                 </div>
                 <div className={styles["desc"]}>
-                  <h4 className={styles["name"]}>@username</h4>
-                  <p>
-                    DHC陪著你留意那些容易被忽略的小訊號，從日常保養開始，慢慢調整現在與未來的自己。
-                  </p>
+                  <h4 className={styles["name"]}>@hitomiii61</h4>
+                  <p>今天到藥妝店補貨我的愛用常備好物</p>
                 </div>
-              </div>
-              <div className={styles["instagram-card"]}>
+              </a>
+              <a
+                href="https://www.instagram.com/reel/DaDBi2iNrd4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                className={styles["instagram-card"]}
+              >
                 <div className={styles["cover"]}>
                   <img src={cardIcon} alt="" className={styles["icon"]} />
-                  <img
-                    src="https://placehold.co/600x400"
-                    alt=""
-                    className={styles["main-pic"]}
-                  />
+                  <img src={pic1} alt="" className={styles["main-pic"]} />
                 </div>
                 <div className={styles["desc"]}>
-                  <h4 className={styles["name"]}>@username</h4>
-                  <p>
-                    DHC陪著你留意那些容易被忽略的小訊號，從日常保養開始，慢慢調整現在與未來的自己。
-                  </p>
+                  <h4 className={styles["name"]}>@poooooooii__</h4>
+                  <p>自己已經吃DHC的保健食品很多年了 除了維他命C還有再搭配鋅</p>
                 </div>
-              </div>
-              <div className={styles["instagram-card"]}>
+              </a>
+              <a
+                href="https://www.instagram.com/reels/DaK7VxQOb_2/"
+                className={styles["instagram-card"]}
+              >
                 <div className={styles["cover"]}>
                   <img src={cardIcon} alt="" className={styles["icon"]} />
-                  <img
-                    src="https://placehold.co/600x400"
-                    alt=""
-                    className={styles["main-pic"]}
-                  />
+                  <img src={pic4} alt="" className={styles["main-pic"]} />
                 </div>
                 <div className={styles["desc"]}>
-                  <h4 className={styles["name"]}>@username</h4>
-                  <p>
-                    DHC陪著你留意那些容易被忽略的小訊號，從日常保養開始，慢慢調整現在與未來的自己。
-                  </p>
+                  <h4 className={styles["name"]}>@min_chienn</h4>
+                  <p>日本紓解壓力產品推薦 如果跟我一樣有因為壓力而導致失眠</p>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
           <div className={styles["box"]}>
